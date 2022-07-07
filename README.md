@@ -15,14 +15,14 @@ You can tap animator #1 button to sync tempo, or sync it to BeatStep internal te
 Above each XY pad you can set the DS100 remote object number.
 Each animator has its own number of beat steps count setting, you can resync all with "reset phase", desync them by individual "phase shift" button, or on the opposite each tap reset individual phase.
 
-* 4x Travellizer (Anims 1-4) : moves objects along trajectories. Start position and speed as rotary button parameters. Tap to launch manually, activate to auto launch on each beat step. You can activate "SYM" to control two symetrical (left/right) objects with the same animator.
-* 2x Randomizer (Anims 5-6) : set object position along trajectories, with random jitter and position as rotary button parameters. Tap to generate a new position, activate to auto generate on each beat step. You can sync 
-* 2x Travelizer (Anims 7-8) : moves objects with circular LFO, rotation speed and random jitter as rotary button parameters. Tap to reset phase (center front), activate to launch rotation. You can set Rate high to have smooth displacement (default 20 Hz), or sync it with BPM. You can set with below XY pads the center of rotation and distance as circle radius.
+* 4x "Trajectorizer" (Anims 1-4) : moves objects along trajectories. Start position and speed as rotary button parameters. Tap to launch manually, activate to auto launch on each beat step. You can activate "SYM" to control two symetrical (left/right) objects with the same animator.
+* 2x "Randomizer" (Anims 5-6) : set object position along trajectories, with random jitter and position as rotary button parameters. Tap to generate a new position, activate to auto generate on each beat step. You can sync 
+* 2x "Travellizer" (Anims 7-8) : moves objects with circular LFO, rotation speed and random jitter as rotary button parameters. Tap to reset phase (center front), activate to launch rotation. You can set Rate high to have smooth displacement (default 20 Hz), or sync it with BPM. You can set with below XY pads the center of rotation and distance as circle radius.
 
 The big knob is mapped to all DS100 outputs level.
 
 ### With BeatStep in SEQ mode (blue)
-Anim9 setting for DS100 remote object number.
+Anim 9 "Stepseqzer" setting for DS100 remote object number.
 Each step parameter is mapped to positions on Trajectory9.
 The big knob is default tempo setting.
 
