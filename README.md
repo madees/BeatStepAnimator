@@ -3,6 +3,9 @@ Example of Chataigne DS100 OSC Module usage with Arturia BeatStep as a Live Obje
 
 A simple interface to generate Soundscape sound object animation in live situation.
 
+!https://github.com/madees/BeatStepAnimator/blob/main/BeatStep.jpg
+!https://github.com/madees/BeatStepAnimator/blob/main/Dashboard.jpg
+
 It provides 9 animators, that can move maximum 13 objects :
 
 ### With BeatStep in CNTRL mode (red)
