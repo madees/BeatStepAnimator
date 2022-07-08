@@ -7,7 +7,7 @@ A simple interface to generate Soundscape sound object animation in live situati
 
 ![](https://github.com/madees/BeatStepAnimator/blob/main/Dashboard.jpg)
 
-It provides 9 animators, that can move maximum 13 objects :
+It provides 9 animators, that can move maximum 17 objects :
 
 ### With BeatStep in CNTRL mode (red)
 Each animator use a vertical slice of the controller. bottom buttons are activates, top buttons are tap triggers. The two rotary encoders above are principal parameters.
