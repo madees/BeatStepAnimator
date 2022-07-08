@@ -16,8 +16,8 @@ Above each XY pad you can set the DS100 remote object number.
 Each animator has its own number of beat steps count setting, you can resync all with "reset phase", desync them by individual "phase shift" button, or on the opposite each tap reset individual phase.
 
 * 4x "Trajectorizer" (Anims 1-4) : moves objects along trajectories. Start position and speed as rotary button parameters. Tap to launch manually, activate to auto launch on each beat step. You can activate "SYM" to control two symetrical (left/right) objects with the same animator.
-* 2x "Randomizer" (Anims 5-6) : set object position along trajectories, with random jitter and position as rotary button parameters. Tap to generate a new position, activate to auto generate on each beat step. You can sync 
-* 2x "Travellizer" (Anims 7-8) : moves objects with circular LFO, rotation speed and random jitter as rotary button parameters. Tap to reset phase (center front), activate to launch rotation. You can set Rate high to have smooth displacement (default 20 Hz), or sync it with BPM. You can set with below XY pads the center of rotation and distance as circle radius.
+* 2x "Randomizer" (Anims 5-6) : set object position along trajectories, with random jitter and position as rotary button parameters. Tap to generate a new position, activate to auto generate on each beat step. Paired objects have same position on trajectory, but jitter random generated positions are different.
+* 2x "Circlellizer" (Anims 7-8) : moves objects with circular LFO, rotation speed and random jitter as rotary button parameters. Tap to reset phase (center front), activate to launch rotation. You can set Rate high to have smooth displacement (default 20 Hz), or sync it with BPM. You can set with below XY pads the center of rotation and distance as circle radius. Paired objects have their own radius, and phase shift rotation parameter.
 
 The big knob is mapped to all DS100 outputs level.
 
@@ -30,9 +30,9 @@ The big knob is default tempo setting.
 1. First install DS100 OSC module (in Chataigne/Files menu/Community module manager...). You can also download the module folder from https://github.com/madees/dbaudio-DS100-Chataigne-Module/archive/master.zip and manually unzip and copy the DS100 OSC module master folder in your ..Chataigne/modules/ folder).
 2. Download the .noisette and all .js in the same folder.
 3. Launch Chataigne and open this .noisette.
-4. IP of DS100 device should be setup accordingly in DS100 module OSC output settings (default is 192.168.1.100).
-5. Check that the MIDI module for BeatStep is set to the correct MIDI interface.
-5. View the Dashboard full screen
+4. It should show the Dashboard full screen, if not check View menu to show Dashboard
+5. IP of DS100 device should be setup accordingly in DS100 module OSC output settings (default is 192.168.1.100).
+6. Check that the MIDI module for BeatStep is set to the correct MIDI interface.
 
 All objects are send to the default global Coordinate mapping set in DS100 module (#1).
 You can play directly with predefined trajectories. If you want to customize them, they are Curve2D in each Sequences>Mapping2D.
