@@ -5,7 +5,7 @@ A simple interface to generate Soundscape sound object animation in live situati
 
 ![](https://github.com/madees/BeatStepAnimator/blob/main/BeatStep.jpg)
 
-![](https://github.com/madees/BeatStepAnimator/blob/main/Dashboard.jpg)
+![](https://github.com/madees/BeatStepAnimator/blob/main/Dashboard.JPG)
 
 It provides 9 animators, that can move maximum 17 objects :
 
