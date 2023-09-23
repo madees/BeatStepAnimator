@@ -27,16 +27,18 @@ Each step parameter is mapped to positions on Trajectory9.
 The big knob is default tempo setting.
 
 ## How to setup
-1. First install DS100 OSC module (in Chataigne/Files menu/Community module manager...). You can also download the module folder from https://github.com/madees/dbaudio-DS100-Chataigne-Module/archive/master.zip and manually unzip and copy the DS100 OSC module master folder in your ..Chataigne/modules/ folder).
-2. Download the .noisette and all .js in the same folder.
-3. Launch Chataigne and open this .noisette.
-4. It should show the Dashboard full screen, if not check View menu to show Dashboard
-5. IP of DS100 device should be setup accordingly in DS100 module OSC output settings (default is 192.168.1.100).
-6. Check that the MIDI module for BeatStep is set to the correct MIDI interface.
-7. IMPORTANT NOTE : unfortunately, the XY visualisation is vertically opposite to DS100 orientation, and this setting isn't stored in the file.
+1. First use Arturia's Midi COntrol Center to setup BeatStep parameters mapping from configuration file Beatstep.pfi
+2. In Chataigne, install DS100 OSC and ADM-OSC modules (in Chataigne/Files menu/Community module manager...). You can also download the module folder from https://github.com/madees/ and manually unzip and copy in your ..Chataigne/modules/ folder).
+3. Download the .noisette and all filters scripts .js in the same folder.
+4. Launch Chataigne and open this .noisette.
+5. It should show the Dashboard full screen, if not check View menu to show Dashboard
+6. Activate and set IP/port of needed outputs
+7. Check that the MIDI module for BeatStep is set to the correct MIDI interface.
+8. IMPORTANT NOTE : unfortunately, the XY visualisation is vertically opposite to DS100 orientation, and this setting isn't stored in the file.
 >> SO YOU SHOULD RIGHT CLIC ON EVERY XY SQUARE AND SELECT "Invert Y" OPTION each time you re-open Chataigne, until Dashboard update fix.
 
-All objects are send to the default global Coordinate mapping set in DS100 module (#1).
+Note : All objects are send to DS100 with default global Coordinate mapping set in DS100 module (#1).
+
 You can play directly with predefined trajectories. If you want to customize them, they are Curve2D in each Sequences>Mapping2D.
 
 ## About Chataigne
