@@ -37,8 +37,6 @@ The big knob is default tempo setting.
 8. IMPORTANT NOTE : unfortunately, the XY visualisation is vertically opposite to DS100 orientation, and this setting isn't stored in the file.
 >> SO YOU SHOULD RIGHT CLIC ON EVERY XY SQUARE AND SELECT "Invert Y" OPTION each time you re-open Chataigne, until Dashboard update fix.
 
-Note : All objects are send to DS100 with default global Coordinate mapping set in DS100 module (#1).
-
 You can play directly with predefined trajectories. If you want to customize them, they are Curve2D in each Sequences>Mapping2D.
 
 ## About Chataigne
