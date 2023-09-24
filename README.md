@@ -15,17 +15,30 @@ You can tap animator #1 button to sync tempo, or sync it to BeatStep internal te
 Above each XY pad you can set the remote object number.
 Each animator has its own number of beat steps count setting, you can resync all with "reset phase", desync them by individual "phase shift" button, or on the opposite each tap reset individual phase.
 
-* 4x "Trajectorizer" (Anims 1-4) : moves objects along trajectories. Start position and speed as rotary button parameters. Tap to launch manually, activate to auto launch on each beat step. You can activate "SYM" to control two symetrical (left/right) objects with the same animator.
+* 4x "Trajectorizer" (Anims 1-4) : moves objects along trajectories. Start position and speed as rotary button parameters. Tap with upper button to launch manually, activate with lower button to auto trig on each beat step. You can activate "SYM" to control two symetrical (left/right) objects with the same animator. "Beats" parameter is the number of beats count for each auto trigger, you can shift the beat if it is set to more than one, a flashing light helps you to see the settings.
 * 2x "Randomizer" (Anims 5-6) : set object position along trajectories, with random jitter and position as rotary button parameters. Tap to generate a new position, activate to auto generate on each beat step. Paired objects have same position on trajectory, but jitter random generated positions are different.
-* 2x "Circlellizer" (Anims 7-8) : moves objects with circular LFO, rotation speed and random jitter as rotary button parameters. Tap to reset phase (center front), activate to launch rotation. You can set Rate high to have smooth displacement (default 20 Hz), or sync it with BPM. You can set with below XY pads the center of rotation and distance as circle radius. Paired objects have their own radius, and phase shift rotation parameter.
 
-The big knob is mapped to all DS100 outputs level.
+  Pressing "reset all phase" will reset all time shifts between those 6 animators.
+  Resync all will reset all to the first beat.
+  
+* 2x "Circlellizer" (Anims 7-8) : moves objects with circular LFO, random jitter and start position as rotary button parameters. "Tap" to set rotation speed ("tap/cycle" is the number of tap for a full circle), "reset & Activate" to launch rotation and reset phase (center front). . You can set with below XY pads the center of rotation and distance as circle radius. Paired objects have their own radius, and phase shift from first object. "Auto tap" sync the rotation speed to global BPM, taking also "tap/cycle" parameter.
+
+The big knob is mapped to all DS100 outputs level. !!! it will overwrite all matrix ouptus levels !!!
 
 ### With BeatStep in SEQ mode (blue)
 Anim 9 "Stepseqzer" setting for DS100 remote object number.
 Each step parameter is mapped to positions on Trajectory9.
+With BeatStep in STOP mode, you can preset positions on each step. Buttons will activate those steps in PLAY mode.
 
-The big knob is default tempo setting.
+The big knob is BeatStep tempo setting.
+
+### BPM sync
+There are four options:
+* Beatstep : use its internal BPM generator. Can be changed with big know in SEQ mode.
+* EXT : use another MIDI device to receive clock.
+* Tap 7 : use first Circlellizer tapped tempo to setup BPM
+* Tap 8 : use second Circlellizer tapped tempo to setup BPM
+* Ableton : use Ableton Link to setup BPM. It will also reset all animators to first beat at each bar.
 
 ## How to setup
 1. First use Arturia's Midi Control Center to setup BeatStep parameters mapping from configuration file Beatstep.pfi
