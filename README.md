@@ -1,5 +1,5 @@
 # BeatStepAnimator
-Example of Chataigne DS100 OSC Module and ADM-OSC usage with Arturia BeatStep midi controller as a Live Object Animator.
+Example of Chataigne DS100 OSC Module and ADM-OSC usage with Arturia BeatStep midi controller as a Live Object Animator as mixing console side car.
 
 A simple interface to generate Soundscape sound object animation in live situation.
 
