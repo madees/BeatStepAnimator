@@ -57,6 +57,6 @@ Press Alt+Tab or F11 to exit full screen. Got to view>layout>default layout to r
 There is a "close app" in Dashboard button bottom left.
 
 ## About Chataigne
-For global support on how to use Chataigne and its modules, or this example project, please visit the forum : http://benjamin.kuperberg.fr/chataigne/forum or join us on Discord : https://discord.com/invite/ngnJ5z 
+For global support on how to use Chataigne and its modules, please visit : http://benjamin.kuperberg.fr/chataigne and join us to discuss on Discord : https://discord.com/invite/ngnJ5z 
 
 If you need any help, my contact on Discord is also "madees". Any feedback or ideas on improvements or features are welcome !
