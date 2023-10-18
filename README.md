@@ -7,7 +7,7 @@ A simple interface to generate Soundscape sound object animation in live situati
 
 ![](https://github.com/madees/BeatStepAnimator/blob/main/Dashboard.JPG)
 
-It provides 9 animators, that can move maximum 17 objects :
+The example "plug'n play" Noisette provides 9 animators, that can move maximum 17 objects :
 
 ### With BeatStep in CNTRL mode (red)
 Each animator use a vertical slice of the controller. bottom buttons are activates, top buttons are tap triggers. The two rotary encoders above are principal parameters.
@@ -48,13 +48,14 @@ There are four options:
 6. It should show the Dashboard full screen, if not check View menu to show Dashboard.
 7. Activate and set IP/port of needed outputs
 8. Check that the MIDI module for BeatStep is set to the correct MIDI interface.
-9. IMPORTANT NOTE : unfortunately, the XY visualisation is vertically opposite to DS100 orientation, and this setting isn't stored in the file.
->> SO YOU SHOULD RIGHT CLIC ON EVERY XY SQUARE AND SELECT "Invert Y" OPTION each time you re-open Chataigne, until Dashboard update fix.
 
 You can play directly with predefined trajectories. If you want to customize them, they are Curve2D in each Sequences>Mapping2D.
+PLEASE NOTE : if you edit them, in current Chataigne version (1.9.17), Curve2D uses vertical axis reverted to Point2D visualisation. This should be fixed future Chataigne release. See https://github.com/benkuper/Chataigne/issues/201
 Press Alt+Tab or F11 to exit full screen. Got to view>layout>default layout to restore Chatainge layout if needed.
 
 There is a "close app" in Dashboard button bottom left.
+## Little helpers
+I've included some little helpers, first two Point2D filters script and a folder with some pre draw Sequences to import as 2D trajectories to play with.
 
 ## About Chataigne
 For global support on how to use Chataigne and its modules, please visit : http://benjamin.kuperberg.fr/chataigne and join us to discuss on Discord : https://discord.com/invite/ngnJ5z 
