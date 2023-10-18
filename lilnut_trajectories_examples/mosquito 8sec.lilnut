@@ -1,0 +1,3439 @@
+{
+  "modules": null,
+  "customVariables": null,
+  "states": null,
+  "sequences": [
+    {
+      "parameters": [
+        {
+          "value": 8.0,
+          "controlAddress": "/totalTime"
+        },
+        {
+          "value": true,
+          "controlAddress": "/loop"
+        },
+        {
+          "value": 120.0,
+          "controlAddress": "/bpmPreview",
+          "enabled": true
+        },
+        {
+          "value": 4,
+          "hexMode": false,
+          "controlAddress": "/beatsPerBar"
+        },
+        {
+          "value": 8.0,
+          "controlAddress": "/viewEndTime"
+        },
+        {
+          "value": "",
+          "controlAddress": "/ltcSyncModule",
+          "enabled": false
+        }
+      ],
+      "niceName": "mosquito",
+      "type": "Sequence",
+      "layers": {
+        "hideInEditor": true,
+        "items": [
+          {
+            "parameters": [
+              {
+                "value": 200.0,
+                "controlAddress": "/listSize"
+              },
+              {
+                "value": 200,
+                "hexMode": false,
+                "controlAddress": "/uiHeight"
+              }
+            ],
+            "niceName": "Mapping 2D",
+            "containers": {
+              "recorder": {
+                "parameters": [
+                  {
+                    "value": "/modules/afm/values/_fm_obj_pos_xy_18",
+                    "controlAddress": "/inputValue"
+                  },
+                  {
+                    "value": true,
+                    "controlAddress": "/arm"
+                  },
+                  {
+                    "value": "Linear Interactive",
+                    "controlAddress": "/simplificationMethod"
+                  },
+                  {
+                    "value": 0.3981481790542603,
+                    "controlAddress": "/simplificationTolerance"
+                  }
+                ],
+                "editorIsCollapsed": true
+              },
+              "mapping": {
+                "niceName": "Mapping",
+                "type": "Mapping",
+                "im": {
+                  "hideInEditor": true,
+                  "items": [
+                    {
+                      "parameters": [
+                        {
+                          "value": "",
+                          "controlAddress": "/inputValue"
+                        }
+                      ],
+                      "niceName": "Input Value",
+                      "type": "Input Value"
+                    }
+                  ],
+                  "viewOffset": [
+                    0,
+                    0
+                  ],
+                  "viewZoom": 1.0
+                },
+                "params": {
+                  "parameters": [
+                    {
+                      "value": 50,
+                      "hexMode": false,
+                      "controlAddress": "/updateRate"
+                    }
+                  ],
+                  "editorIsCollapsed": true
+                },
+                "filters": {
+                  "viewOffset": [
+                    0,
+                    0
+                  ],
+                  "viewZoom": 1.0
+                },
+                "outputs": {
+                  "editorIsCollapsed": true,
+                  "items": [
+                    {
+                      "niceName": "MappingOutput",
+                      "type": "BaseItem",
+                      "commandModule": "customVariables",
+                      "commandPath": "",
+                      "commandType": "Set Value",
+                      "command": {
+                        "parameters": [
+                          {
+                            "value": "/group/obj",
+                            "controlAddress": "/target"
+                          },
+                          {
+                            "value": "All",
+                            "controlAddress": "/component"
+                          },
+                          {
+                            "value": "Equals",
+                            "controlAddress": "/operator"
+                          }
+                        ],
+                        "paramLinks": {
+                        }
+                      }
+                    }
+                  ],
+                  "viewOffset": [
+                    0,
+                    0
+                  ],
+                  "viewZoom": 1.0
+                }
+              },
+              "curve2D": {
+                "parameters": [
+                  {
+                    "controlMode": 3,
+                    "paramAutomation": {
+                      "niceName": "Position automation",
+                      "type": "BaseItem",
+                      "automation": {
+                        "parameters": [
+                          {
+                            "value": 8.0,
+                            "controlAddress": "/length"
+                          },
+                          {
+                            "value": 0.1000000014901161,
+                            "controlAddress": "/position"
+                          },
+                          {
+                            "value": [
+                              0.0,
+                              1.0
+                            ],
+                            "controlAddress": "/viewValueRange"
+                          },
+                          {
+                            "value": [
+                              0.0,
+                              1.0
+                            ],
+                            "controlAddress": "/range",
+                            "enabled": true
+                          }
+                        ],
+                        "hideInRemoteControl": false,
+                        "items": [
+                          {
+                            "parameters": [
+                              {
+                                "value": "Perlin",
+                                "controlAddress": "/easingType"
+                              }
+                            ],
+                            "niceName": "Key 0",
+                            "containers": {
+                              "easing": {
+                                "parameters": [
+                                  {
+                                    "value": [
+                                      3.314533710479736,
+                                      0.06999999284744263
+                                    ],
+                                    "controlAddress": "/taper1"
+                                  },
+                                  {
+                                    "value": [
+                                      -2.741865634918213,
+                                      -0.05500000715255737
+                                    ],
+                                    "controlAddress": "/taper2"
+                                  }
+                                ]
+                              }
+                            },
+                            "type": "Key"
+                          },
+                          {
+                            "parameters": [
+                              {
+                                "value": 8.0,
+                                "controlAddress": "/position"
+                              },
+                              {
+                                "value": 1.0,
+                                "controlAddress": "/value"
+                              },
+                              {
+                                "value": "Bezier",
+                                "controlAddress": "/easingType"
+                              }
+                            ],
+                            "niceName": "Key 4",
+                            "containers": {
+                              "easing": {
+                                "parameters": [
+                                  {
+                                    "value": [
+                                      0.8725624084472656,
+                                      0.1473088264465332
+                                    ],
+                                    "controlAddress": "/anchor1"
+                                  }
+                                ]
+                              }
+                            },
+                            "type": "Key"
+                          }
+                        ],
+                        "viewOffset": [
+                          0,
+                          0
+                        ],
+                        "viewZoom": 1.0
+                      }
+                    },
+                    "controlAddress": "/position"
+                  },
+                  {
+                    "value": false,
+                    "controlAddress": "/keySync"
+                  }
+                ],
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.02174121141433716,
+                          -0.1360584497451782
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 0",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.0002257227897644043,
+                              -0.004103034734725952
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.05030855536460876,
+                          -0.1316807270050049
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 1",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.001402139663696289,
+                              0.02548649907112122
+                            ],
+                            "controlAddress": "/anchor1"
+                          },
+                          {
+                            "value": [
+                              0.01085281372070312,
+                              -0.02310287952423096
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.07929858565330505,
+                          -0.06080532073974609
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 2",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.02777346968650818,
+                              0.05912268161773682
+                            ],
+                            "controlAddress": "/anchor1"
+                          },
+                          {
+                            "value": [
+                              0.05592900514602661,
+                              -0.03374618291854858
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.1844187080860138,
+                          0.1045774817466736
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 3",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.001289635896682739,
+                              -0.003258883953094482
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.1934889554977417,
+                          0.1274977326393127
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 4",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.009056508541107178,
+                              -0.003485620021820068
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.1363990306854248,
+                          0.09009629487991333
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 5",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.0211416482925415,
+                              0.008136868476867676
+                            ],
+                            "controlAddress": "/anchor1"
+                          },
+                          {
+                            "value": [
+                              -0.018048495054245,
+                              0.0136905312538147
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.05013161897659302,
+                          0.1232984662055969
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 6",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.02005261182785034,
+                              -0.01521074771881104
+                            ],
+                            "controlAddress": "/anchor1"
+                          },
+                          {
+                            "value": [
+                              -0.0251573920249939,
+                              -0.0007619857788085938
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.05229705572128296,
+                          0.05596065521240234
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 7",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.06650567054748535,
+                              0.002014458179473877
+                            ],
+                            "controlAddress": "/anchor1"
+                          },
+                          {
+                            "value": [
+                              -0.0596882700920105,
+                              0.02940022945404053
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.2511422038078308,
+                          0.03851979970932007
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 8",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.009937167167663574,
+                              -0.001666247844696045
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.321031928062439,
+                          0.05023866891860962
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 9",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.01011490821838379,
+                              0.001822292804718018
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.3921716213226318,
+                          0.03742212057113647
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 10",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.006669878959655762,
+                              0.005781501531600952
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.3452613949775696,
+                          -0.003240048885345459
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 11",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.01044338941574097,
+                              0.002999424934387207
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.271811306476593,
+                          -0.02433544397354126
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 12",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.007484495639801025,
+                              0.00008618831634521484
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.2191717028617859,
+                          -0.02494162321090698
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 13",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.02492034435272217,
+                              0.003201663494110107
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.05064457654953003,
+                          -0.06802380084991455
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 14",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.08178168535232544,
+                              -0.01050698757171631
+                            ],
+                            "controlAddress": "/anchor1"
+                          },
+                          {
+                            "value": [
+                              0.08054158091545105,
+                              0.0176548957824707
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.1843999922275543,
+                          -0.145107090473175
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 15",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.01211613416671753,
+                              0.002794116735458374
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.269614577293396,
+                          -0.164758563041687
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 16",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.008490383625030518,
+                              0.001986324787139893
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.3293286561965942,
+                          -0.1787286400794983
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 17",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.004976317286491394,
+                              -0.003891080617904663
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.2943294644355774,
+                          -0.1513621807098389
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 18",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.007443755865097046,
+                              -0.007065325975418091
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.241976410150528,
+                          -0.1016706824302673
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 19",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.006827592849731445,
+                              -0.005450397729873657
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.1939568519592285,
+                          -0.06333732604980469
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 20",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.006162047386169434,
+                              -0.007594168186187744
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.1596486866474152,
+                          -0.008871257305145264
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 21",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.0276012122631073,
+                              0.03401589393615723
+                            ],
+                            "controlAddress": "/anchor1"
+                          },
+                          {
+                            "value": [
+                              -0.02367085218429565,
+                              -0.03685921430587769
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.08068603277206421,
+                          0.09617674350738525
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 22",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.006815820932388306,
+                              -0.005102694034576416
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.03274932503700256,
+                          0.1320647001266479
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 23",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.003600001335144043,
+                              -0.007144033908843994
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.007429987192153931,
+                          0.1823095679283142
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 24",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.009279191493988037,
+                              0.005475819110870361
+                            ],
+                            "controlAddress": "/anchor1"
+                          },
+                          {
+                            "value": [
+                              -0.009279191493988037,
+                              -0.005475819110870361
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.02040755748748779,
+                          0.1987370848655701
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 25",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.004793047904968262,
+                              0.01059216260910034
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.05411773920059204,
+                          0.1242406964302063
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 26",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.00221782922744751,
+                              0.005865573883056641
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.06971621513366699,
+                          0.08298736810684204
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 27",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.005457162857055664,
+                              0.006176769733428955
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.1159176826477051,
+                          0.04797667264938354
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 28",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.026175856590271,
+                              -0.02962759137153625
+                            ],
+                            "controlAddress": "/anchor1"
+                          },
+                          {
+                            "value": [
+                              -0.02471810579299927,
+                              0.03085425496101379
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.1917667388916016,
+                          -0.04320251941680908
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 29",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.002580404281616211,
+                              0.003960311412811279
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.2099152803421021,
+                          -0.07105588912963867
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 30",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.003023624420166016,
+                              0.0005884468555450439
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.2311808466911316,
+                          -0.07519441843032837
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 31",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.009887218475341797,
+                              0.01097914576530457
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.3007192015647888,
+                          -0.1524123549461365
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 32",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.004244208335876465,
+                              0.005055367946624756
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.3305692076683044,
+                          -0.1879675388336182
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 33",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.01078355312347412,
+                              -0.002772063016891479
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.2547269463539124,
+                          -0.1684712171554565
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 34",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.006559193134307861,
+                              -0.005529165267944336
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.2085950374603271,
+                          -0.1295837759971619
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 35",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.009351909160614014,
+                              -0.001174658536911011
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.142821729183197,
+                          -0.1213222146034241
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 36",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.01331770420074463,
+                              -0.002614110708236694
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.0585792064666748,
+                          -0.07643961906433105
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 37",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.1019082069396973,
+                              0.02000340819358826
+                            ],
+                            "controlAddress": "/anchor1"
+                          },
+                          {
+                            "value": [
+                              0.1030175983905792,
+                              0.01314523816108704
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.2485547065734863,
+                          -0.02411812543869019
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 38",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.00938589870929718,
+                              -0.003859907388687134
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.3145670592784882,
+                          0.003029167652130127
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 39",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.006918579339981079,
+                              -0.005549728870391846
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.3632264137268066,
+                          0.04206115007400513
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 40",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.0106673389673233,
+                              -0.0002185702323913574
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.2882014513015747,
+                          0.043598473072052
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 41",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.01123857498168945,
+                              -0.003725647926330566
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.2091589272022247,
+                          0.06980156898498535
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 42",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.006282716989517212,
+                              0.003178298473358154
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.164971649646759,
+                          0.04744827747344971
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 43",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.01920220255851746,
+                              0.004703342914581299
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.04038149118423462,
+                          0.1036075949668884
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 44",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.06847494840621948,
+                              -0.01677197217941284
+                            ],
+                            "controlAddress": "/anchor1"
+                          },
+                          {
+                            "value": [
+                              -0.05896931886672974,
+                              -0.03863590955734253
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.1654717326164246,
+                          0.1521409153938293
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 45",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.002525389194488525,
+                              0.003473162651062012
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.1832331418991089,
+                          0.1277135014533997
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 46",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.0005745291709899902,
+                              0.003631532192230225
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.1872737407684326,
+                          0.1021721959114075
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 47",
+                    "containers": {
+                      "easing": {
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.1083526611328125,
+                          0.007682204246520996
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 48",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.03539282083511353,
+                              -0.03035187721252441
+                            ],
+                            "controlAddress": "/anchor1"
+                          },
+                          {
+                            "value": [
+                              0.02688109874725342,
+                              0.03809583187103271
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.05649209022521973,
+                          -0.122223436832428
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 49",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.002321541309356689,
+                              0.003139525651931763
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.04016417264938354,
+                          -0.1443042755126953
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 50",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.001898825168609619,
+                              -0.00426521897315979
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.02680939435958862,
+                          -0.1143064498901367
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 51",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.01696133613586426,
+                              -0.01305526494979858
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.1013886332511902,
+                          -0.003557026386260986
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 52",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.0108296275138855,
+                              0.008335649967193604
+                            ],
+                            "controlAddress": "/anchor1"
+                          },
+                          {
+                            "value": [
+                              0.002798974514007568,
+                              -0.01337647438049316
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.1432254314422607,
+                          0.0286450982093811
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 53",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.001981139183044434,
+                              0.00946807861328125
+                            ],
+                            "controlAddress": "/anchor1"
+                          },
+                          {
+                            "value": [
+                              -0.00962066650390625,
+                              -0.001006245613098145
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.1370444297790527,
+                          0.05818462371826172
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 54",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.01845073699951172,
+                              0.001929879188537598
+                            ],
+                            "controlAddress": "/anchor1"
+                          },
+                          {
+                            "value": [
+                              0.005616843700408936,
+                              -0.01768064498901367
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.1949885487556458,
+                          0.06424528360366821
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 55",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.006057679653167725,
+                              0.01906836032867432
+                            ],
+                            "controlAddress": "/anchor1"
+                          },
+                          {
+                            "value": [
+                              0.006057679653167725,
+                              -0.01906836032867432
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.1768155097961426,
+                          0.1214503645896912
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 56",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.002337038516998291,
+                              -0.0009658336639404297
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.1932521462440491,
+                          0.1282430291175842
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 57",
+                    "containers": {
+                      "easing": {
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.08506810665130615,
+                          0.1334701180458069
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 58",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.0379633903503418,
+                              -0.01994216442108154
+                            ],
+                            "controlAddress": "/anchor1"
+                          },
+                          {
+                            "value": [
+                              0.03506436944007874,
+                              0.02468597888946533
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.1720635890960693,
+                          0.04429972171783447
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 59",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.00786888599395752,
+                              -0.002734720706939697
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.2274066209793091,
+                          0.06353342533111572
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 60",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.01131466031074524,
+                              0.0007330775260925293
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.3069842457771301,
+                          0.05837768316268921
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 61",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.008692726492881775,
+                              0.005264759063720703
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.3681214451789856,
+                          0.02134978771209717
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 62",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.01012539863586426,
+                              -0.0005679726600646973
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.2969080805778503,
+                          0.02534449100494385
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 63",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.008790522813796997,
+                              0.003234356641769409
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.2350830137729645,
+                          0.002596735954284668
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 64",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.008691102266311646,
+                              0.006532877683639526
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.1739571392536163,
+                          -0.04334986209869385
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 65",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.01168355345726013,
+                              0.007011830806732178
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.07812440395355225,
+                          -0.04276126623153687
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 66",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.0832633376121521,
+                              -0.04997009038925171
+                            ],
+                            "controlAddress": "/anchor1"
+                          },
+                          {
+                            "value": [
+                              -0.09086209535598755,
+                              0.03426188230514526
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.1958854794502258,
+                          -0.1416890621185303
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 67",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.009035110473632812,
+                              0.004134505987167358
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.2594305276870728,
+                          -0.1707675457000732
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 68",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.009207665920257568,
+                              -0.001196563243865967
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.3241894841194153,
+                          -0.1623520255088806
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 69",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.005425393581390381,
+                              -0.004117041826248169
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.2860317826271057,
+                          -0.1333962678909302
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 70",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.001527369022369385,
+                              -0.004013985395431519
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.2752895355224609,
+                          -0.105165421962738
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 71",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.006813228130340576,
+                              -0.008273869752883911
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.2273711562156677,
+                          -0.04697412252426147
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 72",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.004207015037536621,
+                              -0.003735065460205078
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.1977828145027161,
+                          -0.02070492506027222
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 73",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.006497621536254883,
+                              -0.005380332469940186
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.1512906551361084,
+                          0.01615655422210693
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 74",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.04457437992095947,
+                              0.03690958023071289
+                            ],
+                            "controlAddress": "/anchor1"
+                          },
+                          {
+                            "value": [
+                              0.01415222883224487,
+                              -0.05611509084701538
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.05255424976348877,
+                          0.1589635014533997
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 75",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.002432942390441895,
+                              -0.006187558174133301
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.03544312715530396,
+                          0.2024816870689392
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 76",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.006535738706588745,
+                              0.006152629852294922
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.01052370667457581,
+                          0.1592094302177429
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 77",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.002669453620910645,
+                              0.007643282413482666
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.02929839491844177,
+                          0.1054533123970032
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 78",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.006370097398757935,
+                              0.001558005809783936
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.0741003155708313,
+                          0.09449553489685059
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 79",
+                    "containers": {
+                      "easing": {
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.167866438627243,
+                          0.01551991701126099
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 80",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.002613216638565063,
+                              -0.0502067506313324
+                            ],
+                            "controlAddress": "/anchor1"
+                          },
+                          {
+                            "value": [
+                              0.07054352760314941,
+                              0.07919558882713318
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.2188141644001007,
+                          -0.081531822681427
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 81",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.006465137004852295,
+                              0.002919942140579224
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.2642844319343567,
+                          -0.102068305015564
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 82",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.005578964948654175,
+                              0.009715527296066284
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.3035221099853516,
+                          -0.1703989505767822
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 83",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.002943068742752075,
+                              0.0002138018608093262
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.3242211043834686,
+                          -0.171902596950531
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 84",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.01528844237327576,
+                              -0.001908481121063232
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.216695249080658,
+                          -0.1584798693656921
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 85",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.006727010011672974,
+                              -0.00168311595916748
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.1693831086158752,
+                          -0.14664226770401
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 86",
+                    "containers": {
+                      "easing": {
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.0129854679107666,
+                          -0.1125829219818115
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 87",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.05323034524917603,
+                              0.04834136366844177
+                            ],
+                            "controlAddress": "/anchor1"
+                          },
+                          {
+                            "value": [
+                              -0.07040214538574219,
+                              -0.01462510228157043
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.2162154316902161,
+                          -0.04025882482528687
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 88",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.007585883140563965,
+                              -0.005538433790206909
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.2695682644844055,
+                          -0.001306235790252686
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 89",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.01235151290893555,
+                              -0.002083182334899902
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.3564383387565613,
+                          0.01334518194198608
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 90",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.002616703510284424,
+                              -0.00377887487411499
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.3748418092727661,
+                          0.03992235660552979
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 91",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.007399916648864746,
+                              0.002649068832397461
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.3227972388267517,
+                          0.02129125595092773
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 92",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.009241700172424316,
+                              -0.006748199462890625
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.2577992081642151,
+                          0.06875252723693848
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 93",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.02191954851150513,
+                              0.0004230141639709473
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.1075336337089539,
+                          0.0704461932182312
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 94",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.02702921628952026,
+                              -0.0005216598510742188
+                            ],
+                            "controlAddress": "/anchor1"
+                          },
+                          {
+                            "value": [
+                              0.02695679664611816,
+                              -0.002044796943664551
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.07673388719558716,
+                          0.1062358021736145
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 95",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.03164383769035339,
+                              0.00240027904510498
+                            ],
+                            "controlAddress": "/anchor1"
+                          },
+                          {
+                            "value": [
+                              0.005537241697311401,
+                              0.03124791383743286
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.1796465516090393,
+                          0.1133944988250732
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 96",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.002192020416259766,
+                              -0.01237010955810547
+                            ],
+                            "controlAddress": "/anchor1"
+                          },
+                          {
+                            "value": [
+                              -0.00723344087600708,
+                              -0.002945184707641602
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.09462177753448486,
+                          -0.04555916786193848
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 97",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.01006230711936951,
+                              0.004097014665603638
+                            ],
+                            "controlAddress": "/anchor1"
+                          },
+                          {
+                            "value": [
+                              -0.004369437694549561,
+                              0.009947031736373901
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.06301012635231018,
+                          -0.03268802165985107
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 98",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              0.02117845416069031,
+                              -0.0482126772403717
+                            ],
+                            "controlAddress": "/anchor1"
+                          },
+                          {
+                            "value": [
+                              0.04758080840110779,
+                              -0.02256229519844055
+                            ],
+                            "controlAddress": "/anchor2"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          -0.05609804391860962,
+                          -0.09754657745361328
+                        ],
+                        "controlAddress": "/viewUIPosition"
+                      },
+                      {
+                        "value": "Bezier",
+                        "controlAddress": "/easingType"
+                      }
+                    ],
+                    "niceName": "Key 99",
+                    "containers": {
+                      "easing": {
+                        "parameters": [
+                          {
+                            "value": [
+                              -0.04758080840110779,
+                              0.02256229519844055
+                            ],
+                            "controlAddress": "/anchor1"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "2DKey"
+                  }
+                ],
+                "viewOffset": [
+                  46,
+                  -53
+                ],
+                "viewZoom": 3.180078029632568
+              }
+            },
+            "type": "Mapping 2D"
+          }
+        ],
+        "viewOffset": [
+          0,
+          0
+        ],
+        "viewZoom": 1.0
+      },
+      "cues": {
+        "hideInEditor": true,
+        "viewOffset": [
+          0,
+          0
+        ],
+        "viewZoom": 1.0
+      },
+      "editing": true
+    }
+  ],
+  "routers": null
+}
